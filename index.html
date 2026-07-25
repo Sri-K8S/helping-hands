@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Helping Hands - A modern fundraising platform dedicated to making a difference in people's lives. Support our mission to help those in need.">
+    <meta name="keywords" content="fundraising, charity, donations, help, community, assistance">
+    <meta name="author" content="Helping Hands Organization">
+    <meta name="theme-color" content="#ff6b6b">
+    <meta property="og:title" content="Helping Hands - Transform Lives, One Donation at a Time">
+    <meta property="og:description" content="Join our mission to help those in need. Every contribution makes a difference.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Helping+Hands">
+    <meta property="og:url" content="https://sri-k8s.github.io/helping-hands">
+    <title>Helping Hands - Transform Lives Through Giving</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>🤝</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">🤝</span>
+                    <span class="logo-text">Helping Hands</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" aria-current="page">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transform Lives Through Giving</h1>
+            <p class="hero-subtitle">Every donation helps us provide essential support to those in need. Together, we can make a real difference.</p>
+            <a href="#donate" class="btn btn-primary btn-lg" aria-label="Scroll to donation section">Start Donating Now</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-card">
+                <div class="stat-number" data-target="1500">0</div>
+                <div class="stat-label">Lives Helped</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="45000">0</div>
+                <div class="stat-label">Funds Raised</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="12">0</div>
+                <div class="stat-label">Active Projects</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Helping Hands</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Our Mission</h3>
+                    <p>We believe that everyone deserves a chance to succeed. Helping Hands is dedicated to providing compassionate support, resources, and opportunities to individuals and families in need. Our mission is to bridge the gap between those who want to help and those who need it most.</p>
+                    <div class="values">
+                        <div class="value-item">
+                            <span class="value-icon">❤️</span>
+                            <h4>Compassion</h4>
+                            <p>We approach every individual with empathy and understanding</p>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🎯</span>
+                            <h4>Impact</h4>
+                            <p>Every donation directly transforms lives and creates real change</p>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">💎</span>
+                            <h4>Transparency</h4>
+                            <p>We're committed to complete transparency in all our operations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">🌱</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="donate">
+        <div class="container">
+            <h2>Make a Difference</h2>
+            <div class="donation-grid">
+                <!-- Quick Donation Options -->
+                <div class="donation-card">
+                    <h3>Quick Donations</h3>
+                    <p>Choose an amount that works for you</p>
+                    <div class="donation-amounts">
+                        <button class="amount-btn" data-amount="100" aria-label="Donate 100">₹100</button>
+                        <button class="amount-btn" data-amount="500" aria-label="Donate 500">₹500</button>
+                        <button class="amount-btn" data-amount="1000" aria-label="Donate 1000">₹1000</button>
+                        <button class="amount-btn" data-amount="5000" aria-label="Donate 5000">₹5000</button>
+                    </div>
+                    <div class="custom-donation">
+                        <input type="number" id="customAmount" placeholder="Custom amount" min="1" aria-label="Enter custom donation amount">
+                        <button class="btn btn-primary" id="customDonateBtn">Donate Custom</button>
+                    </div>
+                </div>
+
+                <!-- UPI Payment -->
+                <div class="donation-card">
+                    <h3>💳 UPI Payment</h3>
+                    <p>Fast and secure UPI payments</p>
+                    <div class="qr-placeholder">
+                        <div class="qr-box">
+                            <div class="qr-icon">📱</div>
+                            <p>UPI QR Code</p>
+                            <p class="qr-note">Replace with actual QR code image</p>
+                        </div>
+                    </div>
+                    <p class="upi-id"><strong>UPI ID:</strong> helpinghands@upi</p>
+                </div>
+
+                <!-- Bank Transfer -->
+                <div class="donation-card">
+                    <h3>🏦 Bank Transfer</h3>
+                    <p>Direct bank transfer details</p>
+                    <div class="bank-details">
+                        <div class="detail-item">
+                            <span class="label">Account Name:</span>
+                            <span class="value">Helping Hands Foundation</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Account Number:</span>
+                            <span class="value">1234567890</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">IFSC Code:</span>
+                            <span class="value">BANK0001234</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Bank Name:</span>
+                            <span class="value">XYZ Bank Ltd.</span>
+                        </div>
+                        <button class="btn btn-secondary" id="copyBankDetails" aria-label="Copy bank details">Copy Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Donation Message -->
+            <div class="donation-message">
+                <h3>Your Impact Matters</h3>
+                <p>Every rupee you donate directly helps provide food, shelter, education, and medical care to those in need. Your generosity is the backbone of our mission.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+                        <span>Where does my donation go?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div id="faq1" class="faq-answer" hidden>
+                        <p>Every donation is meticulously tracked and used for our core programs: food assistance, education support, medical aid, and emergency relief. We maintain 95% allocation to beneficiaries with only 5% going to operational costs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+                        <span>Is my donation tax-deductible?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div id="faq2" class="faq-answer" hidden>
+                        <p>Yes! We are registered as a 501(c)(3) non-profit organization. All donations are tax-deductible. You'll receive a tax receipt immediately after your donation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+                        <span>Can I donate anonymously?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div id="faq3" class="faq-answer" hidden>
+                        <p>Absolutely! You can make anonymous donations through bank transfer or UPI. We'll still keep your transaction details private and secure. No public recognition is required.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+                        <span>How do you ensure transparency?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div id="faq4" class="faq-answer" hidden>
+                        <p>We publish detailed quarterly reports showing exactly where funds go. Our financial statements are audited annually by independent auditors, and we're listed on charity watchdog websites.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq5">
+                        <span>Can I set up recurring donations?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div id="faq5" class="faq-answer" hidden>
+                        <p>Yes! Monthly recurring donations help us plan better assistance programs. Contact us at donate@helpinghands.org or use the bank transfer method with a standing instruction.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq6">
+                        <span>How can I volunteer?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div id="faq6" class="faq-answer" hidden>
+                        <p>We'd love your help! Send us an email at volunteer@helpinghands.org with your skills and availability. We have opportunities in community outreach, events, fundraising, and administration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <form id="contactForm" aria-label="Contact form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required aria-label="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required aria-label="Your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required aria-label="Message subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required aria-label="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div id="formStatus" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <span class="info-icon">📍</span>
+                        <h3>Address</h3>
+                        <p>123 Helping Street<br>Kindness City, HC 12345<br>Your Country</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">📧</span>
+                        <h3>Email</h3>
+                        <p><a href="mailto:contact@helpinghands.org">contact@helpinghands.org</a><br>
+                        <a href="mailto:donate@helpinghands.org">donate@helpinghands.org</a></p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">📞</span>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a><br>Available 9 AM - 6 PM EST</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">🌐</span>
+                        <h3>Follow Us</h3>
+                        <p>
+                            <a href="#" aria-label="Follow on Facebook">Facebook</a> •
+                            <a href="#" aria-label="Follow on Twitter">Twitter</a> •
+                            <a href="#" aria-label="Follow on Instagram">Instagram</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Helping Hands</h4>
+                    <p>Transforming lives through compassion and community support.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Helping Hands Foundation. All rights reserved. | Built with ❤️ for a better tomorrow.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

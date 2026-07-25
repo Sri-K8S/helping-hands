@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+eThumbs.db
+
+# Environment
+.env
+.env.local
+
+# Build
+_site/
+.jekyll-cache/
+.bundle/
+vendor/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary
+.tmp/
+.temp/
