@@ -209,13 +209,8 @@ body {
 .hero {
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: white;
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero-content h1 {
@@ -226,116 +221,135 @@ body {
 
 .hero-subtitle {
   font-size: 1.25rem;
-  margin-bottom: 2rem;
-  max-width: 600px;
+  margin-bottom: 1.5rem;
   animation: slideInUp 0.8s ease;
 }
 
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-  width: 100%;
-  max-width: 800px;
+.hero-description {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 1rem auto;
+  line-height: 1.8;
+  animation: slideInUp 0.8s ease;
 }
 
-.stat-card {
-  background: rgba(255, 255, 255, 0.15);
-  padding: 2rem;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.stat-label {
-  font-size: 0.95rem;
-  opacity: 0.9;
-}
-
-/* About Section */
-.about {
+/* Story Section */
+.story {
   padding: 5rem 2rem;
   background: var(--light-bg);
 }
 
-.about h2 {
+.story h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
   color: var(--text-dark);
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
+.story-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.about-content h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+.story-content p {
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.story-highlight {
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(78, 205, 196, 0.1));
+  padding: 2rem;
+  border-radius: 15px;
+  margin-top: 2rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.story-highlight p {
+  margin-bottom: 0;
+  font-size: 1.1rem;
   color: var(--primary-color);
 }
 
-.about-content p {
-  margin-bottom: 1.5rem;
+/* Contribution Section */
+.contribution-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.05), rgba(78, 205, 196, 0.05));
+}
+
+.contribution-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
   color: var(--text-dark);
 }
 
-.values {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+.contribution-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contribution-content p {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+  line-height: 1.8;
+}
+
+.contribution-highlight {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
   margin-top: 2rem;
 }
 
-.value-item {
-  text-align: center;
-  padding: 1.5rem;
-  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(78, 205, 196, 0.1));
+/* Quotes Section */
+.quotes-section {
+  padding: 5rem 2rem;
+  background: var(--light-bg);
+}
+
+.quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quote-card {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 2rem;
   border-radius: 15px;
-  transition: var(--transition);
-}
-
-.value-item:hover {
-  transform: translateY(-5px);
   box-shadow: var(--shadow);
-}
-
-.value-icon {
-  font-size: 2.5rem;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.value-item h4 {
-  margin-bottom: 0.5rem;
-  color: var(--primary-color);
-}
-
-.value-item p {
-  font-size: 0.9rem;
-  margin-bottom: 0;
-}
-
-.about-image {
+  transition: var(--transition);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  min-height: 150px;
 }
 
-.image-placeholder {
-  font-size: 10rem;
-  opacity: 0.8;
-  animation: float 3s ease-in-out infinite;
+.quote-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(255, 107, 107, 0.2);
+}
+
+.quote-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.6;
 }
 
 /* Donation Section */
@@ -347,7 +361,15 @@ body {
 .donate h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.donate-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1.05rem;
   color: var(--text-dark);
 }
 
@@ -466,6 +488,7 @@ body {
   border-radius: 10px;
   text-align: center;
   color: var(--text-dark);
+  margin-bottom: 1rem;
 }
 
 .bank-details {
@@ -493,24 +516,62 @@ body {
   padding: 0.5rem 0;
 }
 
-.donation-message {
-  text-align: center;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  color: white;
-  padding: 3rem 2rem;
-  border-radius: 15px;
-  margin-top: 3rem;
+/* Transparency Section */
+.transparency-section {
+  padding: 5rem 2rem;
+  background: var(--light-bg);
 }
 
-.donation-message h3 {
-  font-size: 1.8rem;
+.transparency-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--text-dark);
+}
+
+.transparency-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.transparency-card {
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(78, 205, 196, 0.1));
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.transparency-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow);
+}
+
+.transparency-icon {
+  font-size: 2.5rem;
+  display: block;
   margin-bottom: 1rem;
+}
+
+.transparency-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+}
+
+.transparency-card p {
+  color: var(--text-dark);
+  font-size: 0.95rem;
 }
 
 /* FAQ Section */
 .faq {
   padding: 5rem 2rem;
-  background: var(--light-bg);
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.05), rgba(78, 205, 196, 0.05));
 }
 
 .faq h2 {
@@ -657,7 +718,7 @@ body {
 
 .contact-info {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
 
@@ -700,6 +761,34 @@ body {
 
 .info-card a:hover {
   text-decoration: underline;
+}
+
+/* Closing Section */
+.closing-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  text-align: center;
+}
+
+.closing-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.closing-content p {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.closing-highlight {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2rem;
 }
 
 /* Footer */
@@ -807,15 +896,6 @@ body {
   }
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-links {
@@ -838,17 +918,17 @@ body {
     font-size: 1rem;
   }
 
-  .hero-stats {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .about-grid,
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
   .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .values {
     grid-template-columns: 1fr;
   }
 
@@ -873,6 +953,14 @@ body {
     left: 1rem;
     max-width: none;
   }
+
+  .quotes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .transparency-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
@@ -880,8 +968,8 @@ body {
     font-size: 1.5rem;
   }
 
-  .about h2,
-  .donate h2,
+  .story h2,
+  .donation-section h2,
   .faq h2,
   .contact h2 {
     font-size: 1.8rem;
@@ -891,12 +979,13 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .stat-card {
-    padding: 1rem;
+  .custom-donation {
+    flex-direction: column;
   }
 
-  .stat-number {
-    font-size: 1.8rem;
+  .custom-donation input,
+  .custom-donation button {
+    width: 100%;
   }
 }
 
