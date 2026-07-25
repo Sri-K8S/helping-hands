@@ -1,0 +1,36 @@
+# GitHub Pages Configuration
+theme: null
+remote_theme: null
+
+# Site Settings
+title: Helping Hands
+description: A modern fundraising website dedicated to making a difference in people's lives
+url: https://sri-k8s.github.io/helping-hands
+baseurl: /helping-hands
+
+# Repository Settings
+repository: Sri-K8S/helping-hands
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO Settings
+seo_tag:
+  title: Helping Hands - Transform Lives Through Giving
+  description: Join our mission to help those in need. Every contribution makes a difference.
+  image: https://via.placeholder.com/1200x630?text=Helping+Hands
+
+# Social Settings
+social:
+  name: Helping Hands Foundation
+  links:
+    - https://twitter.com/helpinghands
+    - https://facebook.com/helpinghands
+    - https://instagram.com/helpinghands
+
+# Other Settings
+encode: UTF-8
+lang: en-US

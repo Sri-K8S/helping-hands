@@ -1,0 +1,27 @@
+{
+  "name": "helping-hands",
+  "version": "1.0.0",
+  "description": "A modern, responsive fundraising website built with HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sri-K8S/helping-hands.git"
+  },
+  "keywords": [
+    "fundraising",
+    "charity",
+    "donations",
+    "help",
+    "community",
+    "assistance"
+  ],
+  "author": "Helping Hands Foundation",
+  "license": "MIT",
+  "scripts": {
+    "serve": "jekyll serve",
+    "build": "jekyll build"
+  },
+  "devDependencies": {
+    "jekyll": "^4.3.0"
+  }
+}
