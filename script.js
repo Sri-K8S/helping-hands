@@ -122,8 +122,8 @@ Helping Hands
 Account Name : BALNE SRIKANTH
 Bank Name    : HDFC Bank Limited
 Account No.  : 50100466807881
-SWIFT / BIC  : HDFCINBBXXX
-Branch Name  : YOUR BRANCH NAME
+SWIFT / BIC  : HDFCINBB
+Branch Name  : RAMANTHAPUR
 `.trim();
 
     try {
