@@ -372,7 +372,31 @@ body {
   font-size: 1.05rem;
   color: var(--text-dark);
 }
+.donation-card {
+  background: var(--light-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
 
+.donation-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary-color);
+  box-shadow: 0 15px 40px rgba(255, 107, 107, 0.2);
+}
+
+.donation-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.donation-card p {
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
 
 .bank-details {
   background: linear-gradient(135deg, rgba(78, 205, 196, 0.1), rgba(255, 107, 107, 0.1));
