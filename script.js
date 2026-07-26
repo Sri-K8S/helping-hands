@@ -70,10 +70,10 @@ customDonateBtn.addEventListener('click', () => {
 // Copy Bank Details
 copyBankDetailsBtn.addEventListener('click', () => {
   const bankDetails = `
-Account Name: Helping Hands Foundation
-Account Number: 1234567890
-IFSC Code: BANK0001234
-Bank Name: XYZ Bank Ltd.
+Account Name: BALNE SRIKANTH
+Account Number: 50100466807881
+SWIFT / BIC Code:: HDFCINBB
+Bank Name: HDFC Bank Limited.
   `.trim();
   
   navigator.clipboard.writeText(bankDetails).then(() => {
