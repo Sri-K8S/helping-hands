@@ -276,10 +276,11 @@ body {
 /* Story Section */
 .story {
   padding: 5rem 2rem;
-  background:linear-gradient(
-       135deg,
-       #f0fdfa,
-       #eff6ff
+  background:
+    linear-gradient(
+      135deg,
+      #ecfeff,
+      #f0fdf4
     );
 }
 
