@@ -392,42 +392,12 @@ body {
 /* Donation Section */
 .donate {
   padding: 5rem 2rem;
-  /* background: linear-gradient(
+  background: linear-gradient(
     135deg,
     rgba(255, 107, 107, 0.05),
     rgba(78, 205, 196, 0.05)
-  ); */
-  background:
-  linear-gradient(
-    rgba(15,118,110,.80),
-    rgba(11,17,32,.75)
-  ),
-  url("./images/bgrnd.png");
-
-
-  background-size:cover;
-
-  background-position:center;
-
-  background-repeat:no-repeat;
-
-
-  min-height:700px;
-
-  padding:6rem 2rem;
-
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-
-  color:white;
-
-  text-align:center;
-}
+  );
+  
 
 .donate h2 {
   text-align: center;
