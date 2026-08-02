@@ -233,57 +233,31 @@
             stability.
         </p>
 
-        <!-- International Wire Transfer -->
+         <!-- UPI Donation -->
         <div class="donation-card">
-            <h3>🌍 Bank Transfer</h3>
-            <p>Support Helping Hands through international wire transfer</p>
-
-            <div class="bank-details">
-
-                <div class="detail-item">
-                    <span class="label">Account Name:</span>
-                    <span class="value" id="accountName">
-                        BALNE SRIKANTH
-                    </span>
-                </div>
-
-                <div class="detail-item">
-                    <span class="label">Bank Name:</span>
-                    <span class="value" id="bankName">
-                        HDFC Bank Limited
-                    </span>
-                </div>
-
-                <div class="detail-item">
-                    <span class="label">Account Number:</span>
-                    <span class="value" id="accountNumber">
-                        50100466807881
-                    </span>
-                </div>
-
-                <div class="detail-item">
-                    <span class="label">SWIFT / BIC Code:</span>
-                    <span class="value" id="swiftCode">
-                        HDFCINBB
-                    </span>
-                </div>
-
-                <div class="detail-item">
-                    <span class="label">Branch Name:</span>
-                    <span class="value" id="branchName">
-                        RAMANTHAPUR
-                    </span>
-                </div>
-
-                <button
-                    class="btn btn-secondary"
-                    id="copyBankDetails"
-                    aria-label="Copy bank details">
-                    Copy Bank Details
-                </button>
-
-            </div>
+            <h3>💳 Donate with UPI</h3>
+        
+            <p>Click the button to pay using PhonePe, Google Pay, Paytm, BHIM, or any UPI app.</p>
+        
+            <button class="btn btn-primary" onclick="payWithUPI()">
+                Donate via UPI
+            </button>
         </div>
+        
+        <script>
+        function payWithUPI() {
+            const upiUrl =
+                "upi://pay?pa=7013548595@axl&pn=BALNE%20SRIKANTH&cu=INR&tn=Donation";
+        
+            const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        
+            if (isMobile) {
+                window.location.href = upiUrl;
+            } else {
+                alert("Please open this page on a mobile phone with a UPI app installed.");
+            }
+        }
+        </script>
         <div class="donation-grid">
 
             <!-- PayPal -->
